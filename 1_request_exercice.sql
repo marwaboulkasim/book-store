@@ -20,7 +20,7 @@ SELECT rating, comment FROM review WHERE rating >= 4;
 SELECT title, publication_year FROM book ORDER BY publication_year DESC;
 
 -- 8. Commandes au mois de mars 2024
-
+SELECT * FROM customer_order WHERE strftime('%Y-%m', order_date) = '2024-03';
 
 -- 9. Livres dont le titre contient "secret"
-
+SELECT *FROM book WHERE LOWER(title) LIKE '%secret%';
